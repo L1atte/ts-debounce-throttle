@@ -7,14 +7,14 @@ export function debounce<Args extends any[], F extends (...args: Args) => any>(
 ): Func<Args, F> {
   let timeoutId: ReturnType<typeof setTimeout> | undefined;
   const isImmediate = options?.immediate ?? false;
-  const maxWait = options?.maxWait ?? false;
+  const maxWait = options?.maxWait;
   const callback = options?.callback ?? false;
   let lastInvokeTime = Date.now();
 
   let promises: Promises<ReturnType<F>>[] = [];
 
   const nextInvokeDelay = () => {
-    if (maxWait) {
+    if (maxWait !== undefined) {
       const timeSinceLastInvoke = Date.now() - lastInvokeTime;
       const timeUtilNextInvoke = maxWait - timeSinceLastInvoke;
 
