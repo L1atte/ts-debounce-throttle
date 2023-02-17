@@ -2,3 +2,5 @@
 /dist
 coverage
 /.vscode
+pnpm-lock.yaml
+package-lock.json
