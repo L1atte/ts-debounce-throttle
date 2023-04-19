@@ -1,8 +1,10 @@
 {
   "name": "ts-debounce-throttle",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Implement debounce and throttle function with TypeScript.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "vite build",
     "test": "npm run test:code",
@@ -17,7 +19,13 @@
     "debounce",
     "throttle"
   ],
-  "author": "L1atte",
+  "files": [
+    "dist/*"
+  ],
+  "author": {
+    "name": "Latte",
+    "url": "https://github.com/L1atte"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/L1atte/ts-debounce-throttle/issues"
@@ -29,6 +37,7 @@
     "prettier": "2.8.1",
     "ts-jest": "^29.0.3",
     "typescript": "^4.9.4",
-    "vite": "^4.1.2"
+    "vite": "^4.1.2",
+    "vite-plugin-dts": "^2.3.0"
   }
 }
