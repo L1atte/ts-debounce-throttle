@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/L1atte/ts-debounce-throttle#readme",
   "devDependencies": {
-    "@types/jest": "^29.2.4",
+    "@types/jest": "^29.5.1",
     "@types/node": "^18.15.12",
     "jest": "^29.3.1",
     "np": "^7.7.0",
