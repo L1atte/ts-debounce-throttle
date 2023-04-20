@@ -9,9 +9,9 @@
     "build": "npm run rm-output && npm run test && vite build",
     "test": "npm run test:code",
     "test:code": "jest",
-    "publish": "npx np --no-2fa",
+    "np": "npx np --no-2fa",
     "rm-output": "npx rimraf dist",
-    "release": "npm run build && npm run publish"
+    "release": "npm run build && npm run np"
   },
   "repository": {
     "type": "git",
