@@ -11,5 +11,9 @@ export default defineConfig({
       formats: ["es", "cjs", "umd"],
     },
   },
-  plugins: [dts()],
+  plugins: [
+    dts({
+      outputDir: resolve(__dirname, "dist"),
+    }),
+  ],
 });
