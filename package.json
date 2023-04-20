@@ -1,6 +1,6 @@
 {
   "name": "p-debounce-throttle",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Implement debounce and throttle function with TypeScript.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -9,7 +9,7 @@
     "build": "npm run rm-output && npm run test && vite build",
     "test": "npm run test:code",
     "test:code": "jest",
-    "publish": "npx np",
+    "publish": "npx np --no-2fa",
     "rm-output": "npx rimraf dist",
     "release": "npm run build && npm run publish"
   },
