@@ -1,6 +1,6 @@
 {
   "name": "p-debounce-throttle",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Implement debounce and throttle function with TypeScript.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
